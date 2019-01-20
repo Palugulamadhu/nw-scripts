@@ -1,3 +1,6 @@
+import os #module needed for deletion of file
+
+
 #will create new madhu.txt file
 f = open("madhu.txt" , "x")
 
@@ -31,7 +34,6 @@ print(f.read())
 f.close()
 
 #deletes the file madhu.txt once data is written
-import os
 if os.path.exists("madhu.txt"):
     os.remove("madhu.txt")
 else:
